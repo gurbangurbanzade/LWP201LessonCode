@@ -1,0 +1,16 @@
+p {
+  /* font-family: "Times New Roman", Times, serif; */
+  /* font-weight: lighter; */
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+}
+
+span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+}
+
+.fa-solid {
+  color: red;
+  font-size: 60px;
+}
