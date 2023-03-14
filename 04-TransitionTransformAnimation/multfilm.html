@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 900px;
+        /* width: 100vw; */
+        background-image: url("img/road.jpg");
+        background-size: cover;
+        position: relative;
+      }
+      .carBox {
+        position: absolute;
+        bottom: 50px;
+        transform: rotateY(180deg);
+        animation-name: carRoad;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes carRoad {
+        0% {
+          left: 0px;
+        }
+        50% {
+          left: 800px;
+          transform: rotateY(180deg);
+          border-radius: 40px;
+        }
+        100% {
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carBox">
+        <img src="img/car.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

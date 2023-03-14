@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: gray;
+        /* padding: 200px 0; */
+      }
+
+      .box {
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        /* margin: auto; */
+        /* border-bottom: 5px solid red; */
+        position: relative;
+        animation: yellowBox;
+        animation-duration: 3s;
+        /* animation-delay: 2s; */
+        /* animation-timing-function: ease-in-out; */
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: forwards; */
+        animation-direction: alternate-reverse;
+      }
+      @keyframes yellowBox {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+        20% {
+          left: 100px;
+          top: 0px;
+          border-radius: 50%;
+          background-color: green;
+        }
+        40% {
+          left: 100px;
+          top: 100px;
+          background-color: blue;
+        }
+        60% {
+          left: 200px;
+          top: 100px;
+
+          background-color: red;
+        }
+        80% {
+          left: 200px;
+          top: 200px;
+          background-color: purple;
+        }
+        100% {
+          left: 300px;
+          top: 200px;
+          background-color: red;
+        }
+      }
+      @keyframes hasanStyleYellowBox {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

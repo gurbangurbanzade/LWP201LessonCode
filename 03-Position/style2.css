@@ -1,0 +1,14 @@
+.box {
+  background-color: red;
+}
+
+.box::before {
+  content: "Hello";
+  background-color: blue;
+  font-weight: bold;
+}
+.box::after {
+  content: attr(nameGurban);
+  background-color: green;
+  font-weight: bold;
+}
