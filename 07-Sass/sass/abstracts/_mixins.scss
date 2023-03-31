@@ -1,0 +1,14 @@
+@mixin btn($color) {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: $color;
+  color: $mainColor;
+  font-weight: bold;
+}
+
+@mixin displayFlex($jC: center, $aI: center) {
+  display: flex;
+  justify-content: $jC;
+  align-items: $aI;
+}

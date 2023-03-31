@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: rgb(124, 124, 244);
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+header nav ul li a:hover {
+  background-color: rgb(75, 75, 160);
+}
+header nav div button:hover {
+  background-color: rgb(204, 79, 79);
+}
+header nav div .btnLog {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: yellow;
+  color: white;
+  font-weight: bold;
+}
+header nav div .btnSign {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+footer .box, footer .box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+footer .box2 {
+  background-color: green;
+}/*# sourceMappingURL=main.css.map */

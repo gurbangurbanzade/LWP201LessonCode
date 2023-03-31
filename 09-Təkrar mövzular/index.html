@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <style>
+      header {
+        display: flex;
+        padding: 20px;
+        border: 2px solid red;
+      }
+      div {
+        font-size: 100px;
+      }
+      .itemBox {
+        display: flex;
+        border: 2px solid green;
+        padding: 10px;
+      }
+      .itemBox2 {
+        display: flex;
+      }
+      .box {
+        /* width: 100px;
+        height: 100px; */
+        border: 2px solid black;
+      }
+
+      @media screen and (max-width: 768px) {
+        header {
+          flex-direction: column;
+        }
+        div {
+          font-size: 50px;
+        }
+      }
+      @media screen and (max-width: 560px) {
+        .itemBox2 {
+          flex-direction: column;
+        }
+        div {
+          font-size: 16px;
+        }
+      } ;
+    </style> -->
+    <!-- <style>
+      header {
+        display: grid;
+        grid-template-areas: "col1 col2 col3 col4 col5 col6 col7 col8";
+        padding: 20px;
+        border: 2px solid red;
+      }
+      div {
+        /* width: 100px;
+        height: 100px; */
+        border: 2px solid black;
+      }
+      @media screen and (max-width: 768px) {
+        header {
+          grid-template-areas:
+            "col1 col2 col3 col4"
+            "col5 col6 col7 col8";
+        }
+      }
+
+      @media screen and (max-width: 560px) {
+        header {
+          grid-template-areas:
+            "col1 col2"
+            "col3 col4"
+            "col5 col6"
+            "col7 col8";
+        }
+      }
+    </style> -->
+
+    <style>
+      header {
+        display: grid;
+        grid-template: 120px 60px/ 1fr 3fr 2fr 1fr;
+        padding: 20px;
+        border: 2px solid red;
+      }
+      div {
+        /* width: 100px;
+        height: 100px; */
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="box1">item 1</div>
+      <div class="box2">item 2</div>
+      <div class="box3">item 3</div>
+      <div class="box4">item 4</div>
+
+      <div class="box5">item 5</div>
+      <div class="box6">item 6</div>
+      <div class="box7">item 7</div>
+      <div class="box8">item 8</div>
+    </header>
+  </body>
+</html>

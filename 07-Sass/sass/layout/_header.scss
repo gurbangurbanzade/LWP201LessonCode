@@ -1,0 +1,54 @@
+header {
+  nav {
+    @include displayFlex(space-between, center); // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    padding: 20px 30px;
+    background-color: rgb(124, 124, 244);
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin-left: 20px;
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          color: $mainColor;
+          padding: 10px;
+          border-radius: 10px;
+          &:hover {
+            background-color: rgb(75, 75, 160);
+          }
+        }
+      }
+    }
+    div {
+      button {
+        &:hover {
+          background-color: $bgColorBtn;
+        }
+      }
+      .btnLog {
+        @include btn(yellow);
+      }
+      .btnSign {
+        // @include btn;
+        @include btn(red);
+
+        // background-color: blueviolet;
+      }
+    }
+  }
+}
+
+footer {
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+  .box2 {
+    @extend .box;
+    background-color: green;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 1 ci usul */
+
+    /* .container {
+      background-color: #2196f3;
+      padding: 10px;
+      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    .item {
+      background-color: #d3eafd;
+      text-align: center;
+    }
+    .header {
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+    .menu {
+      grid-column: 1/1;
+      grid-row: 2/4;
+    }
+    .footer {
+      grid-row: 3/4;
+      grid-column: 2/4;
+    } */
+
+    /* 2-ci usul */
+    .container {
+      background-color: #2196f3;
+      padding: 10px;
+      gap: 10px;
+      display: grid;
+      grid-template-areas:
+        "memmed memmed memmed"
+        "menu main right"
+        "menu footer footer";
+    }
+    .item {
+      background-color: #d3eafd;
+      text-align: center;
+    }
+    .header {
+      grid-area: memmed;
+    }
+    .menu {
+      grid-area: menu;
+    }
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header item">Header</div>
+      <div class="menu item">Menu</div>
+      <div class="main item">Main</div>
+      <div class="right item">Right</div>
+      <div class="footer item">footer</div>
+    </div>
+  </body>
+</html>

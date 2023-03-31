@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .containeGrid {
+        /* height: 800px; */
+        background-color: gray;
+        height: 600px;
+        display: grid;
+        /* align-content: center;
+        /* align-content: start; */
+        /* align-content: end; */
+
+        justify-items: end;
+
+        /* grid-template-columns: 100px 150px 200px; */
+        /* grid-template-columns: auto auto auto;
+        grid-template-columns: 160px auto auto;
+        grid-template-columns: 50% auto auto;
+        grid-template-columns: 200px 2fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+
+        /* grid-template-rows: ; */
+        /* grid-template-rows: 100px 200px auto; */
+
+        gap: 10px;
+        /* row-gap: 10px;
+        column-gap: 10px; */
+
+        /* grid-template-areas:
+          "header header header"
+          "sidebar  . ."
+          "sidebar content content"
+          ". . footer"; */
+      }
+      .box {
+        border: 2px solid black;
+        background-color: rgb(57, 131, 57);
+        color: white;
+        /* margin: 5px; */
+      }
+
+      .item1 {
+        align-self: start;
+      }
+
+      .item4 {
+        align-self: end;
+      }
+
+      /* .item1 {
+        grid-area: header;
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+
+      /* grid-column: 1 / span 2; */
+
+      /* grid-row-start: 1;
+        grid-row-end: 3; */
+
+      /* grid-row: 1 / span 2; */
+
+      /* grid-area: 1/3/4/5; */
+    </style>
+  </head>
+
+  <body>
+    <div class="containeGrid">
+      <div class="box item1">item 1</div>
+      <div class="box item2">item 2</div>
+      <div class="box item3">item 3</div>
+      <div class="box item4">item 4</div>
+      <div class="box">item 5</div>
+      <div class="box footer">item 6</div>
+    </div>
+  </body>
+</html>
