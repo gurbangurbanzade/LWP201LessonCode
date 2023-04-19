@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">To Do App</h1>
+    <div class="box">
+      <input class="cstInput" value="" type="text" />
+      <button class="btn">Add</button>
+      <!-- <button class="btn-delete">Delete</button> -->
+    </div>
+    <ul id="list">
+      <li class="listItem itme1">Task 1</li>
+      <li class="listItem itme2">Task 2</li>
+      <li class="listItem itme3">Task 3</li>
+    </ul>
+    <script>
+      let title = document.getElementById("title");
+      title.style.color = "blue";
+      title.style.backgroundColor = "red";
+      title.innerText = "To Do App 2";
+
+      const btn = document.querySelector(".box .btn");
+      //   btn.style.fontSize = "100px";
+      //   //   btn.style.borderRadius = "50px";
+      //   //   btn.style.display = "none";
+
+      const box = document.querySelector(".box");
+
+      const listItems = document.querySelectorAll(".listItem");
+      const list = document.querySelector("#list");
+      //   console.log(list.innerHTML);
+
+      list.innerHTML =
+        list.innerHTML + `<li class="listItem itme4">Task 4</li>`;
+
+      //   console.log(list.innerHTML);
+
+      const cstInput = document.querySelector(".cstInput");
+      //   console.log(cstInput.value);
+      console.log();
+      btn.addEventListener("click", function () {
+        console.log(cstInput.value);
+
+        const newLi = document.createElement("li");
+        newLi.innerText = cstInput.value + ` ${list.children.length + 1}`;
+        newLi.className = `listItem itme${list.children.length + 1}`;
+        list.appendChild(newLi);
+        cstInput.value = "";
+      });
+
+      const deleteBtn = document.createElement("button");
+      deleteBtn.innerText = "Delete";
+      deleteBtn.className = "deleteBtn";
+      box.appendChild(deleteBtn);
+
+      deleteBtn.addEventListener("click", function () {
+        // alert("eminsiz?");
+
+        list.innerHTML = "";
+      });
+    </script>
+  </body>
+</html>
