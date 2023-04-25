@@ -1,0 +1,25 @@
+.box {
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  /* background-color: blue; */
+}
+
+.black {
+  color: white;
+  background-color: black;
+}
+
+.circle {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  border: 6px solid pink;
+  text-align: center;
+}
+
+.bigBox {
+  display: flex;
+  gap: 30px;
+}
