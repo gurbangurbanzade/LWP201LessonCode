@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .itemBox {
+      display: flex;
+    }
+    .item {
+      background-color: gray;
+      width: 40px;
+      height: 40px;
+      margin-left: 30px;
+    }
+  </style>
   <body>
-    <form
+    <!-- <form
       action=" 
    "
       class="formCst"
@@ -20,7 +31,29 @@
 
       <button type="submit" class="addBtn">Add</button>
       <button type="reset" class="resetBtn">Reset</button>
-    </form>
-    <script src="app.js"></script>
+    </form> -->
+    <div class="itemBox">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <script>
+      const items = document.querySelectorAll(".item");
+      console.log(items);
+
+      for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function (e) {
+          for (let j = 0; j < items.length; j++) {
+            if (j <= i) {
+              items[j].style.backgroundColor = "red";
+            } else {
+              items[j].style.backgroundColor = "gray";
+            }
+          }
+        });
+      }
+    </script>
   </body>
 </html>
