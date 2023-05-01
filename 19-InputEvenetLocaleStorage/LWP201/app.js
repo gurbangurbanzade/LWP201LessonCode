@@ -35,6 +35,9 @@ const cstForm = document.querySelector(".cstForm");
 // });
 let arr = [];
 
+if (JSON.parse(localStorage.getItem("dataBase")) !== null) {
+  arr = JSON.parse(localStorage.getItem("dataBase"));
+}
 cstForm.addEventListener("submit", function (e) {
   let obj = {
     name: "",
